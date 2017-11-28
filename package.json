@@ -1,0 +1,12 @@
+{
+  "name": "json-crunch",
+  "version": "1.0.0",
+  "description": "Utility for minifing JSON files",
+  "main": "index.js",
+  "author": "vdtdev.prod@gmail.com",
+  "license": "MIT",
+  "repository": {
+  	"type": "git",
+  	"url": "git+https://github.com/vdtdev/json-crunch.git"
+  }
+}
