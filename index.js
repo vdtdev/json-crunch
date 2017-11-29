@@ -51,6 +51,8 @@ var jsonCrunch = {
 						resolve();
 					}
 				});
+			}).catch((e){
+				reject(e);
 			});
 		});
 	}
