@@ -21,7 +21,13 @@ npm install --save-dev json-crunch
 JSON Crunch has two methods: `crunch` and `crunchToFile`
 
 - `jsonCrunch.crunch(filename, encoding="utf8")` - Crunches contents of specified file and returns it in string form. (Returns a promise)
-- `jsonCrunch.crunchToFile(sourceFile, destFile, encoding="utf8")` - Crunches contents of file and writes result to another file. (Returns a promise)
+- `jsonCrunch.crunchToFile(sourceFile, destFile, encoding="utf8", stats=false)` - Crunches contents of file and writes result to another file. (Returns a promise)
+	- If `stats` is `true`, an object is returned of the form `{ input: Number, output: Number, percent: Number, saved: Number }`;
+		- `input` - size of input file
+		- `output` - size of crunched file
+		- `percent` - percentage of original used for crunched
+		- `saved` - percent smaller crunched is from original
+
 
 ### Example
 
